@@ -1,0 +1,72 @@
+textarea{
+    margin: 5px;
+    resize: none;
+    height: 75px;
+    width: 98%;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    outline: none;
+    
+}
+.feedbackTitle{
+  padding: 3px 12px;
+}
+.formDiv{
+    position: relative;
+    // background-color: rgba(255, 255, 255, 0);
+    background-image: url("https://24cl8t.sharepoint.com/sites/Dev/SiteAssets/KaiZan-bg.png");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.submitBtn{
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+  display: flex;   
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items:center;
+}
+
+.submitBtn button{
+  position: absolute;
+  background-color: #5891bb;
+  padding:7px;
+  border:none;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 10px;
+
+
+}
+.openBtn{
+  animation: OpenNiceSubmitbtn 0.4s ease-out forwards;
+}
+
+.closeBtn{
+  animation: CloseNiceSubmitbtn 0.4s ease-out forwards;
+}
+
+
+@keyframes OpenNiceSubmitbtn{
+  0% {transform: translateX(0%)};
+  100% {transform: translateX(400%)};
+}
+
+
+@keyframes CloseNiceSubmitbtn{
+  0% {transform: translateX(400%)};
+  100% {transform: translateX(0%)};
+}
+
+.msgopen{
+  display: block;
+  color: green;
+  transition: 4ms;
+}
+
+.msgclose{
+  display: none;
+  transition: 4ms;
+}
