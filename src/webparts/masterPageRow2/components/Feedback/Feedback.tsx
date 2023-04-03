@@ -45,7 +45,7 @@ console.log(fb);
             <div className='formDiv'>
                   
                     <div className="field"><textarea value={fb} placeholder='Enter your Feedback here' onChange={(e)=>setFb(e.target.value)}></textarea></div> 
-                    <div className='submitBtn'><div className={msg?'msgopen':'msgclose'}><SlCheck size={15} color={"green"}/> Successfully submitted</div><div className={fb==""?"btnDivHide":"btnDivShow"}><button onClick={()=>{postFeedback();setFb("");setMsg(true);setTimeout(()=>{
+                    <div className='submitBtn'><div className={msg?'msgopen':'msgclose'}> <SlCheck size={15} color={"green"}/>   <div className="successm">      Successfully submitted</div></div><div className={fb==""?"btnDivHide":"btnDivShow"}><button onClick={()=>{postFeedback();setFb("");setMsg(true);setTimeout(()=>{
             setMsg(false)
         },2000)}}><IoMdSend/></button></div></div>
                    

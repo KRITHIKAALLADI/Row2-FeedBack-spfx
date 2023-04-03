@@ -61,10 +61,16 @@ textarea{
 // }
 
 .msgopen{
-  display: block;
+  display: flex;
   color: green;
   transition: 4ms;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding:5px;
 }
+
+
 
 .msgclose{
   display: none;
@@ -78,3 +84,4 @@ textarea{
 .btnDivShow{
   display: block;
 }
+

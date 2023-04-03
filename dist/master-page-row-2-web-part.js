@@ -1607,8 +1607,10 @@ var Feedback = function (props) {
                 react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("textarea", { value: fb, placeholder: 'Enter your Feedback here', onChange: function (e) { return setFb(e.target.value); } })),
             react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: 'submitBtn' },
                 react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: msg ? 'msgopen' : 'msgclose' },
+                    " ",
                     react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_icons_sl__WEBPACK_IMPORTED_MODULE_5__["SlCheck"], { size: 15, color: "green" }),
-                    " Successfully submitted"),
+                    "   ",
+                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: "successm" }, "      Successfully submitted")),
                 react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: fb == "" ? "btnDivHide" : "btnDivShow" },
                     react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("button", { onClick: function () {
                             postFeedback();
@@ -6836,7 +6838,7 @@ __webpack_require__.r(__webpack_exports__);
 
 exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/@microsoft/spfx-heft-plugins/node_modules/css-loader/dist/runtime/api.js */ "Z+AG")(false);
 // Module
-exports.push([module.i, "textarea{margin:5px;resize:none;height:75px;width:98%;background-color:hsla(0,0%,100%,0);border:none;outline:0}.feedbackTitle{padding:3px 12px}.formDiv{position:relative;background-image:url(https://24cl8t.sharepoint.com/sites/Dev/SiteAssets/KaiZan-bg.png);background-size:60%;background-repeat:no-repeat;background-position:50% 120%}.submitBtn{position:absolute;z-index:999;width:100%;display:-ms-flexbox;display:flex;-ms-flex-pack:space-evenly;justify-content:space-evenly;-ms-flex-direction:row;flex-direction:row;-ms-flex-align:center;align-items:center}.submitBtn button{position:absolute;background-color:#5891bb;padding:7px;border:none;cursor:pointer;border-radius:2px;font-size:10px;right:17px}.msgopen{display:block;color:green;transition:4ms}.msgclose{transition:4ms}.btnDivHide,.msgclose{display:none}.btnDivShow{display:block}", ""]);
+exports.push([module.i, "textarea{margin:5px;resize:none;height:75px;width:98%;background-color:hsla(0,0%,100%,0);border:none;outline:0}.feedbackTitle{padding:3px 12px}.formDiv{position:relative;background-image:url(https://24cl8t.sharepoint.com/sites/Dev/SiteAssets/KaiZan-bg.png);background-size:60%;background-repeat:no-repeat;background-position:50% 120%}.submitBtn{position:absolute;z-index:999;width:100%;display:-ms-flexbox;display:flex;-ms-flex-pack:space-evenly;justify-content:space-evenly;-ms-flex-direction:row;flex-direction:row;-ms-flex-align:center;align-items:center}.submitBtn button{position:absolute;background-color:#5891bb;padding:7px;border:none;cursor:pointer;border-radius:2px;font-size:10px;right:17px}.msgopen{display:-ms-flexbox;display:flex;color:green;transition:4ms;-ms-flex-direction:row;flex-direction:row;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;padding:5px}.msgclose{transition:4ms}.btnDivHide,.msgclose{display:none}.btnDivShow{display:block}", ""]);
 
 
 /***/ }),
