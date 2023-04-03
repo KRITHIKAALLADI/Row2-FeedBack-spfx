@@ -5,13 +5,12 @@ import { getSP } from '../pnpConfig';
 import { SPFI } from '@pnp/sp';
 import "@pnp/sp/sputilities";
 // import { IFeedbackprops } from './IFeedbackprops';
-
+import { SlCheck } from "react-icons/sl";
 import { IItemAddResult } from "@pnp/sp/items";
 
 const Feedback = (props:any) => {
 
-
-const [fb, setFb] = React.useState<any>()
+const [fb, setFb] = React.useState<any>("")
 const[msg,setMsg]= React.useState<any>(false)
   const postFeedback = async() =>{
     // alert("a");
@@ -46,9 +45,9 @@ console.log(fb);
             <div className='formDiv'>
                   
                     <div className="field"><textarea value={fb} placeholder='Enter your Feedback here' onChange={(e)=>setFb(e.target.value)}></textarea></div> 
-                    <div className='submitBtn'><div className={msg?'msgopen':'msgclose'}>Successfully submitted</div><button className={msg?'openBtn':'closeBtn'} onClick={()=>{postFeedback();setFb("");setMsg(true);setTimeout(()=>{
+                    <div className='submitBtn'><div className={msg?'msgopen':'msgclose'}><SlCheck size={15} color={"green"}/> Successfully submitted</div><div className={fb==""?"btnDivHide":"btnDivShow"}><button onClick={()=>{postFeedback();setFb("");setMsg(true);setTimeout(()=>{
             setMsg(false)
-        },2000)}}><IoMdSend/></button></div>
+        },2000)}}><IoMdSend/></button></div></div>
                    
 
                 </div>

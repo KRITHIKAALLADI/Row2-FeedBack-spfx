@@ -17,7 +17,7 @@ textarea{
     background-image: url("https://24cl8t.sharepoint.com/sites/Dev/SiteAssets/KaiZan-bg.png");
     background-size: 60%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 50% 120%;
 }
 .submitBtn{
     position: absolute;
@@ -37,28 +37,28 @@ textarea{
   cursor: pointer;
   border-radius: 2px;
   font-size: 10px;
-
+  right:17px;
 
 }
-.openBtn{
-  animation: OpenNiceSubmitbtn 0.4s ease-out forwards;
-}
+// .openBtn{
+//   animation: OpenNiceSubmitbtn 0.4s ease-out forwards;
+// }
 
-.closeBtn{
-  animation: CloseNiceSubmitbtn 0.4s ease-out forwards;
-}
-
-
-@keyframes OpenNiceSubmitbtn{
-  0% {transform: translateX(0%)};
-  100% {transform: translateX(400%)};
-}
+// .closeBtn{
+//   animation: CloseNiceSubmitbtn 0.4s ease-out forwards;
+// }
 
 
-@keyframes CloseNiceSubmitbtn{
-  0% {transform: translateX(400%)};
-  100% {transform: translateX(0%)};
-}
+// @keyframes OpenNiceSubmitbtn{
+//   0% {transform: translateX(0%)};
+//   100% {transform: translateX(400%)};
+// }
+
+
+// @keyframes CloseNiceSubmitbtn{
+//   0% {transform: translateX(400%)};
+//   100% {transform: translateX(0%)};
+// }
 
 .msgopen{
   display: block;
@@ -69,4 +69,12 @@ textarea{
 .msgclose{
   display: none;
   transition: 4ms;
+}
+
+.btnDivHide{
+  display: none;
+}
+
+.btnDivShow{
+  display: block;
 }
